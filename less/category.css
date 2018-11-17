@@ -1,0 +1,509 @@
+/* 样式初始化 */
+html {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: white;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+a {
+  background: transparent;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #666;
+}
+a:active {
+  outline: 0;
+}
+a:active {
+  color: #006699;
+}
+abbr[title] {
+  border-bottom: 0.02702702702702703rem dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+  border: 0;
+  outline: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 0.05405405405405406rem;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+blockquote {
+  margin: 0;
+}
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none outside none;
+}
+h1,
+h2,
+h3 {
+  line-height: 2;
+  font-weight: normal;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cccccc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #cccccc;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* 公共类 */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.color-red {
+  color: #de181b;
+}
+/* border-left 左边框线 */
+.bl {
+  border-left: 0.02702703rem solid #ccc;
+}
+/* border-right 右边框线 */
+.br {
+  border-right: 0.02702703rem solid #ccc;
+}
+/* border-top 上边框线 */
+.bt {
+  border-top: 0.02702703rem solid #ccc;
+}
+/* border-bottom 下边框线 */
+.bb {
+  border-bottom: 0.02702703rem solid #ccc;
+}
+body {
+  padding-bottom: 1.3513513513513513rem;
+}
+/* 创建函数：所有的精灵图使用的重复部分 */
+/* 页首 */
+#header {
+  display: flex;
+  height: 1.2162162162162162rem;
+  background-color: rgba(222, 24, 27, 0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+#header .icon-logo {
+  width: 2.1621621621621623rem;
+  height: 1.2162162162162162rem;
+  background: url(../images/sprites.png) no-repeat 0 -2.97297297rem;
+  padding: 0.2702702702702703rem 0.2702702702702703rem;
+  background-size: 5.405405405405405rem 5.405405405405405rem;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#header > form {
+  flex: 1;
+  padding: 0.2rem 0;
+  position: relative;
+}
+#header > form .icon-search {
+  width: 0.5405405405405406rem;
+  height: 0.5405405405405406rem;
+  background: url(../images/sprites.png) no-repeat -1.62162162rem -2.97297297rem;
+  background-size: 5.405405405405405rem 5.405405405405405rem;
+  position: absolute;
+  left: 0.21621621621621623rem;
+  top: 0.2702702702702703rem;
+}
+#header > form input {
+  width: 100%;
+  height: 0.8108108108108109rem;
+  border-radius: 0.40540540540540543rem;
+  padding-left: 0.8108108108108109rem;
+}
+#header .login {
+  width: 1.3513513513513513rem;
+  height: 0.9459459459459459rem;
+  color: white;
+  font-size: 0.43243243243243246rem;
+  text-align: center;
+  line-height: 1.0810810810810811rem;
+}
+/* 页尾 */
+#footer {
+  border-bottom: 0.02702702702702703rem solid #e5e5e5;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  height: 1.3513513513513513rem;
+}
+#footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+#footer ul li a img {
+  width: 1.7567567567567568rem;
+  height: 1.3513513513513513rem;
+}
+/* 页首 */
+#header {
+  border-bottom: 0.02702702702702703rem solid #e5e5e5;
+}
+#header .icon-back {
+  width: 1.0810810810810811rem;
+  height: 1.1891891891891893rem;
+  padding: 0.2702702702702703rem;
+  background-position: -0.54054054rem 0;
+  background-image: url(../images/sprites.png);
+  background-origin: content-box;
+  background-clip: content-box;
+  background-size: 5.405405405405405rem 5.405405405405405rem;
+}
+#header form input {
+  background-color: #f7f7f7;
+}
+#header form input::-webkit-input-placeholder {
+  font-size: 0.32432432432432434rem;
+}
+#header .shortMenu {
+  background-image: url(../images/sprites.png);
+  background-origin: content-box;
+  background-clip: content-box;
+  background-size: 5.405405405405405rem 5.405405405405405rem;
+  width: 1.0810810810810811rem;
+  height: 1.1891891891891893rem;
+  padding: 0.2972972972972973rem 0.2702702702702703rem;
+  background-position: -1.62162162rem 0;
+}
+/* 页尾 */
+#footer {
+  box-shadow: 0 0 0.27027027rem 0 rgba(154, 141, 141, 0.6);
+}
+/* 分类滑动栏CSS初始化 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 如果需要让页面高度和整个屏幕高度一致，则要给Body设置高度100%，给父元素html也设置  */
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.3783783783783784rem;
+  color: #000;
+  padding: 1.2162162162162162rem 0 1.4324324324324325rem;
+}
+/* 高度是继承Body内容的高度，由于body设置了padding，内容变小了，因此Main也变小了   */
+/* 所有子元素的宽度 或者 高度100%，都是继承父元素内容的高度 */
+/* main设置溢出隐藏，ul的超出的高度也不会出现滚动条  */
+/*  main {
+      height: 100%;
+ } */
+/* 页面内容 */
+#content {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  /* 左侧分类滑动栏CSS初始化 */
+  /* 右侧分类滑动栏CSS初始化 */
+}
+#content .category-left {
+  height: 100%;
+  width: 2.2972972972972974rem;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+#content .category-left .swiper-container {
+  height: 100%;
+}
+#content .category-left .swiper-container .swiper-slide {
+  font-size: 0.3783783783783784rem;
+  height: auto;
+  box-sizing: border-box;
+}
+#content .category-left .swiper-container .swiper-slide ul {
+  height: 47.24324324324324rem;
+  background-color: #f8f8f8;
+}
+#content .category-left .swiper-container .swiper-slide ul li {
+  height: 1.2432432432432432rem;
+  line-height: 1.2432432432432432rem;
+}
+#content .category-left .swiper-container .swiper-slide ul li.active a {
+  color: #de181b;
+}
+#content .category-right {
+  padding: 0.32432432432432434rem 0.1891891891891892rem 0;
+  flex: 1;
+  height: 100%;
+}
+#content .category-right .swiper-container {
+  height: 100%;
+}
+#content .category-right .swiper-container .swiper-slide {
+  font-size: 0.4864864864864865rem;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#content .category-right .swiper-container .swiper-slide > div {
+  /*                       &.hot-category {
+                          i {
+                              .sprites;
+                              background-position: 
+                         }
+                     } */
+  margin-bottom: 0.8108108108108109rem;
+}
+#content .category-right .swiper-container .swiper-slide > div .head {
+  height: 0.8108108108108109rem;
+  line-height: 0.8108108108108109rem;
+}
+#content .category-right .swiper-container .swiper-slide > div .head h4 {
+  float: left;
+  font-size: 0.3783783783783784rem;
+}
+#content .category-right .swiper-container .swiper-slide > div .head span {
+  float: right;
+  font-size: 0.2702702702702703rem;
+}
+#content .category-right .swiper-container .swiper-slide > div ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#content .category-right .swiper-container .swiper-slide > div ul li {
+  width: 33.3%;
+  text-align: center;
+  margin: 0.2702702702702703rem 0;
+}
+#content .category-right .swiper-container .swiper-slide > div ul li a img {
+  width: 70%;
+}
+#content .category-right .swiper-container .swiper-slide > div ul li a span {
+  display: block;
+  font-size: 0.32432432432432434rem;
+  margin-top: 0.13513513513513514rem;
+}

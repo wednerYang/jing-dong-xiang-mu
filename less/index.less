@@ -1,0 +1,192 @@
+@import "base.less";
+
+/* 轮播图 */
+#slider {
+    // position: relative;
+    // height: 175px;
+    // .box {
+    //     width: 2880px;
+    //     position: absolute;
+    //     left: 0px;
+    //     top: 0;
+    //     li {
+    //         float: left;
+    //         img {
+    //             width: 360px;
+    //         }
+    //     }
+    // }
+
+    /* swiper模板css */
+    .swiper-container {
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* 导航 */
+#nav {
+    >ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        >li {
+            margin: 5px 0;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            >a {
+                >img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 内容 */
+#content {
+    background-color: @bg-color;
+    padding: 10px;
+    #seckill {
+        background-color: white;
+        box-shadow: 0 0 1px @border-color;
+        border-bottom: 1px solid @border-color;
+        .seckill-title {
+            padding: 5px 10px;
+            img {
+                width: 20px;
+                height: 25px;
+            }
+            .seckill-time {
+                border-bottom: 1px solid @border-color;
+                >span {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    line-height: 15px;
+                }
+                span:nth-child(3n) {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+        .seckill-content {
+            padding: 10px 0;
+            ul {
+                display: flex;
+                li {
+                    flex: 1;
+                    text-align: center;
+                    img {
+                        width: 110px;
+                        height: 110px;
+                    }
+                }
+            }
+        }
+    }
+    #jdMarket1,
+    #jdMarket3 {
+        background-color: white;
+        box-shadow: 0 0 1px @border-color;
+        margin-top: 10px;
+        .market-title {
+            padding: 5px 20px;
+            h4 {
+                font-weight: normal;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 4px;
+                    height: 15px;
+                    background-color: @jd-red;
+                    position: absolute;
+                    left: -10px;
+                    top: 3px;
+                }
+            }
+        }
+        .market-content {
+            width: 100%;
+            display: flex;
+            .left {
+                flex: 1;
+            }
+            .right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .right-top {
+                    flex: 1;
+                }
+                .right-bottom {
+                    flex: 1;
+                }
+            }
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #jdMarket2 {
+        background-color: white;
+        box-shadow: 0 0 1px @border-color;
+        margin-top: 10px;
+        .market-title {
+            padding: 5px 20px;
+            h4 {
+                font-weight: normal;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 4px;
+                    height: 15px;
+                    background-color: @jd-red;
+                    position: absolute;
+                    left: -10px;
+                    top: 3px;
+                }
+            }
+        }
+        .market-content {
+            width: 100%;
+            display: flex;
+            .left {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .left-top {
+                    flex: 1;
+                }
+                .left-bottom {
+                    flex: 1;
+                }
+            }
+            .right {
+                flex: 1;
+            }
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

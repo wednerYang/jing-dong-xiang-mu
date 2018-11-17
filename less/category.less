@@ -1,0 +1,147 @@
+@import "base.less";
+/* 页首 */
+ #header {
+     border-bottom: 0.02702702702702703rem solid #e5e5e5;
+     .icon-back {
+         width: 1.0810810810810811rem;
+         height: 1.1891891891891893rem;
+         padding: 0.2702702702702703rem;
+         background-position: -0.5405405405405406rem 0;
+         .sprites;
+    }
+     form {
+         input {
+             background-color: #f7f7f7;
+             &::-webkit-input-placeholder {
+                 font-size: 0.32432432432432434rem;
+            }
+        }
+    }
+     .shortMenu {
+         .sprites;
+         width: 1.0810810810810811rem;
+         height: 1.1891891891891893rem;
+         padding: 0.2972972972972973rem 0.2702702702702703rem;
+         background-position: -1.6216216216216217rem 0;
+    }
+}
+/* 页尾 */
+ #footer {
+     box-shadow: 0 0 0.2702702702702703rem 0 hsla(0, 6%, 58%, .6);
+}
+/* 分类滑动栏CSS初始化 */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+  /* 如果需要让页面高度和整个屏幕高度一致，则要给Body设置高度100%，给父元素html也设置  */
+ html, body {
+     height: 100%;
+}
+ body {
+     background: #fff;
+     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+     font-size: 0.3783783783783784rem;
+     color: #000;
+     padding: 1.2162162162162162rem 0 1.4324324324324325rem;
+}
+/* 高度是继承Body内容的高度，由于body设置了padding，内容变小了，因此Main也变小了   */
+/* 所有子元素的宽度 或者 高度100%，都是继承父元素内容的高度 */
+/* main设置溢出隐藏，ul的超出的高度也不会出现滚动条  */
+/*  main {
+      height: 100%;
+ } */
+/* 页面内容 */
+ #content {
+     height: 100%;
+     overflow: hidden;
+     display: flex;
+    /* 左侧分类滑动栏CSS初始化 */
+     .category-left {
+         height: 100%;
+         width: 2.2972972972972974rem;
+         text-align: center;
+         background-color: #f8f8f8;
+         .swiper-container {
+             height: 100%;
+             .swiper-slide {
+                 font-size: 0.3783783783783784rem;
+                 height: auto;
+                 box-sizing: border-box;
+                 ul {
+                     height: 47.24324324324324rem;
+                     background-color: #f8f8f8;
+                     li {
+                         height: 1.2432432432432432rem;
+                         line-height: 1.2432432432432432rem;
+                         &.active {
+                             a {
+                                 color: @jd-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* 右侧分类滑动栏CSS初始化 */
+     .category-right {
+         padding: 0.32432432432432434rem 0.1891891891891892rem 0;
+         flex: 1;
+         height: 100%;
+         .swiper-container {
+             height: 100%;
+             .swiper-slide {
+                 font-size: 0.4864864864864865rem;
+                 height: auto;
+                 -webkit-box-sizing: border-box;
+                 box-sizing: border-box;
+                 >div {
+/*                       &.hot-category {
+                          i {
+                              .sprites;
+                              background-position: 
+                         }
+                     } */
+                     margin-bottom: 0.8108108108108109rem;
+                     .head {
+                         height: 0.8108108108108109rem;
+                         line-height: 0.8108108108108109rem;
+                         h4 {
+                             float: left;
+                             font-size: 0.3783783783783784rem;
+                        }
+                         span {
+                             float: right;
+                             font-size: 0.2702702702702703rem;
+                        }
+                    }
+                     ul {
+                         width: 100%;
+                         display: flex;
+                         flex-wrap: wrap;
+                         justify-content: space-around;
+                         align-items: center;
+                         li {
+                             width: 33.3%;
+                             text-align: center;
+                             margin: 0.2702702702702703rem 0;
+                             a {
+                                 img {
+                                     width: 70%;
+                                }
+                                 span {
+                                     display: block;
+                                     font-size: 0.32432432432432434rem;
+                                     margin-top: 0.13513513513513514rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ 
